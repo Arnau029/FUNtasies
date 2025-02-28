@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style: none;
+    background: #90EE90;
+}
+
+ul li {
+    display: inline-block;
+    position: relative;
+}
+
+ul li a {
+    display: block;
+    padding: 20px 25px;
+    color: #FFF;
+    text-decoration: none;
+    text-align: start;
+    font-size: 20px;
+}
+ul li ul.dropdown li {
+    display: block;
+}
+ul li ul.dropdown {
+    width: 300px;
+    background: #90EE90;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    border-radius: 20px;
+}
+
+ul li a:hover {
+    background: #57d357;
+    border-radius: 20px;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+.header {
+    background-color: #90EE90; 
+    padding: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 50px; 
+    width: 50%;
+    height: 50px;
+    margin: 20px auto;
+}
+
+.header a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+img {
+    height: 140px;
+    width: 150px;
+    padding-right: 50px;
+}
+.row {
+    padding-top: 100px;
+    display: flex;
+}
+.column {
+    padding: 10px;
+    height: auto;
+}
+
+.column:first-child {
+    flex: 55%;
+}
+
+.column:last-child {
+    flex: 45%;
+    display: flex;
+    align-items: flex-start; 
+}
+
+.logo-container {
+    background-image: url('IMG/recortada.png');
+    background-repeat: no-repeat;
+    background-position: 66% center;
+    background-size: 80vh;
+    padding-top: 200px;
+    padding-bottom: 320px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin: 0;
+    width: 100%;
+    position: relative;
+}
+.text-container {
+    padding-top: 160px;
+    font-family: 'Joti One', cursive;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center; 
+}
+
+.text-container h1 {
+    font-size: 100px;
+    color: #333;
+    margin: 0;
+}
+
+.text-container p {
+    font-size: 40px;
+    color: #666;
+}
+
+.btn {
+    font-size: 25px;
+    margin-top: 10px;
+    background-color: #90EE90;
+    color: white;
+    padding: 18px 24px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #7ccf7c;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3);
+}
+.container {
+    text-align: center;
+    padding: 20px;
+}
+.title {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.content {
+    background-color: #a8f0a8;
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+.content p {
+    margin: 0;
+    font-size: 1.2em;
+}
+.highlight {
+    color: #008000;
+    font-weight: bold;
+}
+.large-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    height: 400px;
+    max-width: 6000px;
+    margin: 0 auto; 
+}
+.distance{
+    padding-top: 120px;
+    text-align: left;
+    padding-left: 10%;
+    font-size: 40px;
+    font-family: 'Joti One', cursive;
+    padding-bottom: 90px;
+}
+.distance h1{
+    position: relative;
+}
+.distance h1::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 100px;
+    background-color: #008000;
+}
+.large-box img {
+    width: 40%;
+    height: 340px;
+    border-radius: 10px;
+}
+.text {
+    flex: 1;
+    padding: 20px;
+}
+.text p{
+    font-size: 30px;
+}
+.footer{
+    background-color: #a8f0a8;
+    padding: 20PX;
+}
+.distance2{
+  padding-bottom: 100px;
+    padding-top: 100px;
+}
+@media (max-width: 768px) {
+    .header {
+        width: 60%;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .column {
+        width: 100%;
+    }
+    .large-box {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+    .large-box img {
+        width: 80%;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .img img {
+        width: 80px;
+    }
+    .text-container h1 {
+        font-size: 50px;
+    }
+    .text-container p {
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 18px;
+        padding: 12px 18px;
+    }
+}
